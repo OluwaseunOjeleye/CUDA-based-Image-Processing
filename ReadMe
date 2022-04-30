@@ -1,0 +1,16 @@
+COMPILE:
+bash run.sh
+
+RUN: Without Shared Memory
+./application scale 3 img/resize.jpg
+./application add 1.0 0.0 img/im1.png img/im2.jpg
+./application subtract 1.0 0.0 img/im1.png img/im2.jpg
+./application multiply 1.0 0.0 img/im1.png img/im2.jpg
+./application divide 1.0 0.0 img/im1.png img/im2.jpg
+./application blur 5 3.7 img/grenouille.jpg
+./application laplacian img/grenouille.jpg
+./application separable 5 3.7 img/grenouille.jpg
+./application denoise 3 50 img/grenouille.jpg
+./application shift_hue 100 img/grenouille.jpg
+./application pde 50, 0.05, 0.1 img/grenouille.jpg
+
